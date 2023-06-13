@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Merriweather:wght@300;400;900&family=Montserrat:ital,wght@0,200;1,500;1,600&family=Nunito:ital,wght@0,300;0,400;1,300;1,400&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300&family=Poppins:wght@200;300;400;500;600&family=Questrial&family=Roboto:ital,wght@0,300;1,300&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* border: 2px solid red; */
+  height: 10vh;
+  width: 80%;
+  margin: auto;
+}
+
+header nav p {
+  color: rgb(0, 168, 173);
+  font-family: "Roboto", sans-serif;
+  font-size: 25px;
+  font-weight: 600;
+}
+
+header nav ul {
+  display: flex;
+  list-style: none;
+}
+
+header nav ul li a {
+  padding: 10px 20px;
+  display: block;
+  width: 100px;
+  text-align: center;
+  /* font-family: 'Montserrat', sans-serif; */
+  font-family: "Roboto", sans-serif;
+  text-decoration: none;
+  margin-left: 10px;
+}
+
+nav li:last-child {
+  /* background-color: rgb(0, 168, 173); */
+  border-radius: 3px;
+}
+
+nav ul li a::after {
+  content: "";
+  background-color: rgb(0, 168, 173);
+  height: 0px;
+  width: 0px;
+  position: absolute;
+  display: block;
+  margin-left: -20px;
+  padding-right: 8px;
+  top: 3px;
+  z-index: -1;
+  border-radius: 5px;
+  transition: width 0.3s linear;
+}
+nav ul li a:hover:after{
+  height: 50px;
+  width: 95px;
+  
+}
+
+nav a:hover{
+  color: white;
+}
+section1 {
+  display: flex;
+  justify-content: space-around;
+  width: 100vw;
+  margin-top: 10vh;
+}
+section1 .intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 30vw;
+  gap: 20px;
+}
+
+section1 .intro h1 {
+  line-height: 40px;
+}
+
+section1 .intro h1 span {
+  color: rgb(0, 168, 173);
+}
+section1 .intro p {
+  line-height: 18px;
+  font-size: 16px;
+  letter-spacing: 0.5px;
+}
+img {
+  border-radius: 50%;
+}
+.myimage::after {
+  content: "";
+  position: absolute;
+  background-color: rgb(0, 168, 173);
+  height: 270px;
+  width: 400px;
+  top: 200px;
+  right: 0px;
+  z-index: -1;
+}
+
+.box {
+  position: absolute;
+  background-color: rgb(22, 38, 86);
+  height: 150px;
+  width: 250px;
+  top: 300px;
+  right: 26%;
+  /* border-radius: 0 25px 0 25px; */
+  display: flex;
+  align-items: center;
+}
+
+.box p {
+  color: gray;
+  text-align: justify;
+  width: 80%;
+  letter-spacing: 0.1px;
+  word-spacing: -5px;
+  margin: auto;
+  padding: 5px;
+}
+section1 .intro button {
+  width: 110px;
+  padding: 10px;
+  background-color: rgb(0, 168, 173);
+  border: none;
+  color: white;
+  border-radius: 0px 20px 0px 20px;
+}

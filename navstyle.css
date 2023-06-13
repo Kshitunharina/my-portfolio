@@ -1,0 +1,73 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Merriweather:wght@300;400;900&family=Montserrat:ital,wght@0,200;1,500;1,600&family=Nunito:ital,wght@0,300;0,400;1,300;1,400&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300&family=Poppins:wght@200;300;400;500;600&family=Questrial&family=Roboto:ital,wght@0,300;1,300&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* border: 2px solid red; */
+  height: 10vh;
+  width: 80%;
+  margin: auto;
+  
+}
+
+header nav p {
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-size: 25px;
+  font-weight: 600;
+}
+
+header nav ul {
+  display: flex;
+  list-style: none;
+}
+
+header nav ul li a {
+  padding: 10px 20px;
+  display: block;
+  width: 100px;
+  text-align: center;
+  /* font-family: 'Montserrat', sans-serif; */
+  font-family: "Roboto", sans-serif;
+  text-decoration: none;
+  margin-left: 10px;
+  color: white;
+}
+
+nav li:last-child {
+  /* background-color: rgb(0, 168, 173); */
+  border-radius: 3px;
+}
+
+nav ul li a::after {
+  content: "";
+  background-color: black;
+  height: 0px;
+  width: 0px;
+  position: absolute;
+  display: block;
+  margin-left: -20px;
+  padding-right: 8px;
+  top: 3px;
+  z-index: -1;
+  border-radius: 5px;
+  transition: width 0.3s linear;
+}
+nav ul li a:hover:after{
+  height: 50px;
+  width: 95px;
+  
+}
+
+nav a:hover{
+  color:black;
+}

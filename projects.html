@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>projects</title>
+    <link rel="stylesheet" href="navstyle.css" />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      header {
+        border-bottom: 2px solid white;
+        background-color: #299597;
+      }
+
+      .container {
+        height: 90vh;
+
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        background-color: #a3d6d7;
+      }
+
+      .container img {
+        height: 150px;
+        width: 300px;
+      }
+      .container .content {
+        height: 200px;
+        width: 300px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        padding: 5px;
+        padding-bottom: 10px;
+        border-radius: 15px 0 15px 0;
+        background: #a3d6d7;
+      }
+
+      .worklist__card {
+        box-shadow: -5px -5px 10px #7ca3a3, 5px 5px 10px #caffff;
+        border-top-left-radius: 30px;
+        border-bottom-right-radius: 30px;
+        overflow: hidden;
+        transition: all 0.3s ease;
+      }
+
+      .worklist__card:hover {
+        border-top-left-radius: 0;
+        border-bottom-right-radius: 0;
+        border-top-right-radius: 30px;
+        border-bottom-left-radius: 30px;
+        transform: scale(1.05);
+        border: 2px solid #299597;
+      }
+
+      .content h2 {
+        text-align: center;
+      }
+
+      .content p {
+        text-align: center;
+        font-size: 14px;
+        line-height: 20px;
+      }
+
+      .content a {
+        padding: 7px 18px;
+        box-shadow: 0 1.2rem 3.2rem rgba(0, 0, 0, 0.1);
+        font-weight: 800;
+        text-decoration: none;
+        background-color: #299597;
+        color: #fff;
+        border-radius: 5px;
+      }
+
+      .content a:hover {
+        background-color: rgb(30, 110, 111);
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav style="color: white">
+        <p>Portfolio.</p>
+        <ul>
+          <li><a href="index.html"> Home </a></li>
+          <li><a href="projects.html"> Project </a></li>
+          <li><a href="#"> Services </a></li>
+          <li><a href="#"> Portfolio </a></li>
+          <li><a href="#"> Contact </a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="container">
+      <div class="worklist__card">
+        <img src="Screenshot (33).png" alt="" />
+        <div class="content">
+          <h2>Brochill</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Accusantium veritatis quisquam laudantium autem inventore odio
+            numquam odit nostrum sed. Magnam.
+          </p>
+          <a href="https://seebrochill.netlify.app">Know More</a>
+        </div>
+      </div>
+      <div class="worklist__card">
+        <img src="Screenshot (34).png" alt="" />
+        <div class="content">
+          <h2>Tourist Place</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Accusantium veritatis quisquam laudantium autem inventore odio
+            numquam odit nostrum sed. Magnam.
+          </p>
+          <a href="#">Know More</a>
+        </div>
+      </div>
+      <div class="worklist__card">
+        <img src="Screenshot (37).png" alt="" />
+        <div class="content">
+          <h2>Design Your House</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Accusantium veritatis quisquam laudantium autem inventore odio
+            numquam odit nostrum sed. Magnam.
+          </p>
+          <a href="https://rentalhouse.netlify.app/">Know More</a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
